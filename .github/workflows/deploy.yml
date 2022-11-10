@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install dependencies & build
+      - name: Install Dependencies & Build
         run: |
           npm ci
           npm run build
