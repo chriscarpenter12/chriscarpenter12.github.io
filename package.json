@@ -1,0 +1,21 @@
+{
+  "name": "chriscarpenter12.github.io",
+  "version": "1.0.0",
+  "author": "Chris Carpenter",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve --port=4000",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@grimlink/eleventy-plugin-sass": "^1.0.3",
+    "bootstrap": "^4.0.0",
+    "eleventy-plugin-link_to": "^0.4.1",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="{{ '/' | url }}" rel="home">
+      <img src="{{ '/assets/images/logo.png' | url }}" alt="home">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav mr-auto">
+        {%- for entry in site.navigation %}
+          <li class="nav-item{% if entry.url == page.url %} active{% endif %}">
+            <a class="nav-link" href="{{ entry.url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="tel:5678250080"><i class="fas fa-mobile-alt"></i> {{ site.contact.phone }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

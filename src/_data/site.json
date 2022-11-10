@@ -1,0 +1,23 @@
+{
+  "title": "Carpenter IT Consulting",
+  "description": "Providing quality IT Services For Northwest Ohio. Services include IT Support, Networking, Development, Email and VoIP. Supported areas include Lima, Wapakoneta, Van Wert, Findlay, Celina, Sidney, And surrounding areas...",
+  "contact": {
+    "name": "Chris Carpenter",
+    "email": "chris@carpenter.io",
+    "phone": "567-825-0080"
+  },
+  "navigation": [
+    {
+      "title": "Services",
+      "url": "/services/"
+    },
+    {
+      "title": "About",
+      "url": "/about/"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact/"
+    }
+  ]
+}

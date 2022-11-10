@@ -1,0 +1,46 @@
+{% extends 'default.njk' %}
+
+{% block default %}
+<main class="main" role="main" id="home-page">
+  <div class="container">
+    <div class="intro">
+      <h1>Quality IT Services For Northwest Ohio</h1>
+      <h3>Serving Lima & The Surrounding Areas</h3>
+    </div>
+  </div>
+
+  <section class="services-section">
+    <div class="container">
+      <h2 class="inverse"><i class="fas fa-list-alt"></i> SERVICES</h2>
+      <a href="{% link_to "services" %}" class="btn btn-outline-primary">All Services</a>
+
+      <div class="row showcase services-showcase">
+        {%- for service in collections.service -%}
+          {% if service.data.summaryHome %}
+            <div class="showcase-item col-sm">
+            <div class="showcase-caption">
+              <h3 class="showcase-title">{{ service.data.title }}</h3>
+              {% if service.data.summary %}
+                <p>{{ service.data.summary }}</p>
+              {% endif %}
+              {% if service.data.summaryBullets %}
+                <ul>
+                  {%- for item in service.data.summaryBullets -%}
+                  <li>{{ item }}</li>
+                  {%- endfor -%}
+                </ul>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    {{ content | safe }}
+  </div>
+
+</main>
+{% endblock %}

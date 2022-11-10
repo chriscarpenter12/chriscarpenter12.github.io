@@ -1,0 +1,6 @@
+{%- for service in collections.service -%}
+<div class="service">
+  <h2>{{ service.data.title }}</h2>
+  {{ service.templateContent | safe }}
+</div>
+{%- endfor -%}
