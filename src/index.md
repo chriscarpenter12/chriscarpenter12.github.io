@@ -4,4 +4,4 @@ layout: page
 
 # We're Closed
 
-Unfortunately at this time we're closing consulting services indefinitely.
+Unfortunately, we are not currently accepting new clients.
